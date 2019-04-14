@@ -1,0 +1,48 @@
+<Screen>:
+
+    flo_input: flo_text
+    fhi_input: fhi_text
+    fo_input: fo_text
+
+    TextInput:
+        id: flo_text
+        font_size: 25
+        size: 110, 50
+        pos: 420, 250
+
+    TextInput:
+        id: fhi_text
+        font_size: 25
+        size: 110, 50
+        pos: 420, 350
+
+    TextInput:
+        id: fo_text
+        font_size: 25
+        size: 110, 50
+        pos: 420, 450
+
+    Label:
+        text: 'MDVP(Fo):'
+        pos: 300, 425
+        font_size: 20
+        color: 255, 255, 255, 1
+
+    Label:
+        text: 'MDVP(Fhi):'
+        pos: 300, 325
+        font_size: 20
+        color: 255, 255, 255, 1
+
+    Label:
+        text: 'MDVP(Flo):'
+        pos: 300, 225
+        font_size: 20
+        color: 255, 255, 255, 1
+
+    Button:
+        text: 'start'
+        font_size: 20
+        size: 100, 50
+        pos: 360, 150
+        on_press: root.get_result()
