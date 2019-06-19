@@ -1,8 +1,9 @@
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.widget import Widget
-from PDapp.algorithm import Distinguish
+from algorithm import Distinguish
 from kivy.graphics import Color, Rectangle
+import webbrowser
 
 
 class Screen(Widget):
@@ -21,6 +22,9 @@ class Screen(Widget):
                                   color=(255, 255, 255, 1))
         self.result_label.text = self.result
         self.add_widget(self.result_label)
+
+    def open_website(self):
+        webbrowser.open('www.baidu.com')
 
 
 class MyApp(App):
